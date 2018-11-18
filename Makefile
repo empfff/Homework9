@@ -1,8 +1,11 @@
-all: makedirs
+all: makedirpy makedirout
 
-.PHONY: makedirs
-makedirs:
+.PHONY: makedirpy
+makedirpy:
 	mkdir py36
+
+.PHONY: makedirout
+makedirout:
 	mkdir output
 
 
