@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo "Hello World"
+cd py36
+docker build -t py36
