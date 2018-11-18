@@ -28,7 +28,7 @@ hw9_4.txt:
 	docker run -it --rm -v $(shell pwd):$(shell pwd) -w $(shell pwd) frolvlad/alpine-python-machinelearning /bin/sh -c "python hw9_4.py 0 1 2 > output/hw9_4.txt"
 
 hw9_5.txt:
-docker run -it --rm -v $(shell pwd):$(shell pwd) -w $(shell pwd) frolvlad/alpine-python-machinelearning /bin/sh -c "python hw9_5.py 3 5 > output/hw9_5.txt"
+	docker run -it --rm -v $(shell pwd):$(shell pwd) -w $(shell pwd) frolvlad/alpine-python-machinelearning /bin/sh -c "python hw9_5.py 3 5 > output/hw9_5.txt"
 
 .PHONY: filenames
 filenames:
