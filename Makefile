@@ -2,11 +2,11 @@ all: makedirpy makedirout Dockerfile builddock hw9_1.txt hw9_2.txt hw9_3.txt hw9
 
 .PHONY: makedirpy
 makedirpy:
-	mkdir py36
+	mkdir -p py36
 
 .PHONY: makedirout
 makedirout:
-	mkdir output
+	mkdir -p output
 
 Dockerfile:
 	printf "FROM python:3.6\nRUN apt-get update\nRUN pip install pandas\nRUN pip install numpy\n" > py36/Dockerfile
