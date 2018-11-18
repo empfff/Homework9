@@ -9,10 +9,9 @@ def is_even(x):
 def evensOnly(nums):
     onlyEvens = []
     for num in nums:
-	    convNum = int(num)
+        convNum = int(num)
         if is_even(convNum):
             onlyEvens.append(convNum)
     return onlyEvens
 
 print(evensOnly(sys.argv[1:]))
-
